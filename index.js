@@ -8,6 +8,6 @@ let  run = () => {
   let line = 0;
   for (let i of parts) {
     line++;
-    Console.log(`${JSHell.out.Prefix(line+':')}   ${JSHell.execute(i)}`)
+    Console.log(`${JSHell.out.Prefix(line+':')}   ${JSHell.execute(i)}`);
   }
 }
