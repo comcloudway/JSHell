@@ -3,7 +3,7 @@ Console.src=document.getElementById('console')
 
 let  run = () => {
   Console.src.innerHTML=""
-  let parts = document.getElementById('code').value.split("\n")
+  let parts = document.getElementById('editor').value
   console.log(parts);
   let line = 0;
   for (let i of parts) {
@@ -11,3 +11,12 @@ let  run = () => {
     Console.log(`${JSHell.out.Prefix(line+':')}   ${JSHell.execute(i)}`);
   }
 }
+
+
+
+
+//UI FEATURES
+const toolkit_toggle = (e) => {
+e.style.backgroundColor="red"
+}
+
