@@ -5,30 +5,36 @@
   <meta charset="utf-8">
   <title>Editor</title>
   <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="mi/material-icons.css"/>
 </head>
 
 <body>
-  <header>
-    <p></p>
-    <p></p>
-    <p></p>
-  </header>
-  <main>
-    <div class="overlay">
-
-        <code>  <textarea id="code">/*Enter JS Code here*/</textarea></code>
-
-
-
+    <div class="sidepanel">
+        <i class="material-icons">save</i>
+        <i class="material-icons">create_new_folder</i>
+        <i class="material-icons">folder</i>
+        <i class="material-icons">bug_report</i>
     </div>
-  </main>
-  <nav onclick="run()">
-    Run
-  </nav>
-  <footer id="console">
+    <div class="editor">
+        <pre><code class="js">
+            <textarea id="code">/*Enter JS Code here*/</textarea>
+        </code></pre>
+    </div>
 
-  </footer>
+    <div class="toolkit">
+        <div class="head">
+            <p onclick="toolkit_toggle(this)">Console</p><p>Debug</p>
+        </div>
+    <div class="console" id="console">
+    
+    </div>
+    <div class="debug">
+    
+    </div>
+    </div>
+  
   <script src="jshell.js" charset="utf-8"></script>
+  
   <script src="index.js" charset="utf-8"></script>
 </body>
 
