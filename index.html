@@ -10,27 +10,30 @@
 
 <body>
     <div class="sidepanel">
-        <i class="material-icons">save</i>
-        <i class="material-icons">create_new_folder</i>
-        <i class="material-icons">folder</i>
-        <i class="material-icons">bug_report</i>
+       <div class="menu">
+           <i class="material-icons">save</i>
+           <i class="material-icons">create_new_folder</i>
+           <i class="material-icons">folder</i>
+           <i class="material-icons">bug_report</i>
+       </div>
+       <div class="panel">
+           <p>Char Count:</p>
+           <p>Time: 00:00</p>
+       </div>
     </div>
     <div class="editor">
-        <pre><code class="js">
+        <pre><code>
             <textarea id="code">/*Enter JS Code here*/</textarea>
         </code></pre>
     </div>
 
-    <div class="toolkit">
-        <div class="head">
-            <p onclick="toolkit_toggle(this)">Console</p><p>Debug</p>
+    <div class="toolbox">
+        <div class="content">
         </div>
-    <div class="console" id="console">
-    
-    </div>
-    <div class="debug">
-    
-    </div>
+        <div class="toolbar">
+            <i class="material-icons">bug_report</i>
+            <i class="material-icons">developer_board</i>
+        </div>
     </div>
   
   <script src="jshell.js" charset="utf-8"></script>

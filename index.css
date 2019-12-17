@@ -6,14 +6,20 @@ left: 0;
 width: 100vw;
 height: 100vh;
 overflow: hidden;
+color: #c4c2c2;
+font-family: monospace;
+font-weight: 600
 }
+
+
+/*EDITOR*/
 .editor {
 position: fixed;
 right: 0;
 top: 0;
-width: 90%;
-height: 70%;
-color: #a8a5a2;
+width: 87.5%;
+height: 62.5%;
+color: #c4c2c2;
 overflow-y: auto;
 }
 .editor #code {
@@ -25,54 +31,107 @@ position: absolute;
 right: 0;
 top: 0;
 outline: none;
-color: #a8a5a2;
+color: #c4c2c2;
 }
-.toolkit {
-background-color : #1B2030;
+
+
+/*TOOLBOX*/
+.toolbox {
+background-color : #232A3F;
 position: fixed;
 bottom: 0;
-left: 0;
-width: 100%;
-height: 30%;
+right: 0;
+width: 87.5%;
+height: 37.5%;
+border-top: 4px solid #54a16f;
+z-index:1;
 }
-.toolkit .head {
+
+.toolbox .toolbar {
+background-color : #1B2030;
 position: absolute;
-left: 0;
-top: 0;
-color: #c4c2c2;
-border-top: 5px solid #54a16f;
-border-bottom: 5px solid #54a16f;
-width: 100%;
-height: 10%;
-display: flex;
-flex-direction: row;
-align-items: center;
-background-color : #161A26;
-}
-.toolkit .head p {
-padding: 0% 2%;
-background-color : #161A26;
 height: 100%;
-line-height: 100%;
+width: 12.5%;
+border-left: 2px solid #54a16f;
+right: 0;
+top: 0;
+overflow-y: scroll;
+color: #a8a5a2;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+}
+.toolbox .toolbar i {
+font-size: 400%;
+margin: 25% 0%;
+padding: 25% 0%;
+width: 100%;
 text-align: center;
 }
 
+.toolbox .content {
+position: absolute;
+height: 100%;
+width: 87.5%;
+left: 0;
+top: 0;
+}
+
+
+/*SIDEPANEL*/
 .sidepanel {
 overflow-y: auto;
 position: fixed;
 left: 0;
 top: 0;
-color: #c4c2c2;
-border-right: 3px solid #54a16f;
-width: 10%;
-height: 70%;
+color: #a8a5a2;
+border-right: 5px solid #ed8f47;
+width: 12.5%;
+height: 100%;
+z-index: 2;
+background-color : #1B2030;
+}
+
+.sidepanel .menu {
+width: 100%;
+height: 50%;
+position: absolute;
+top:0;
+left:0;
 display: flex;
 flex-direction: column;
 align-items: center;
-background-color : #1B2030;
+justify-content: space-between;
+overflow-y: scroll;
 }
-.sidepanel i {
-font-size: 450%;
-padding: 1%;
-margin: 3% 1%
+.sidepanel .menu i {
+font-size: 400%;
+margin: 25% 0%;
+padding: 25% 0%;
+width: 100%;
+text-align: center;
+}
+
+.sidepanel .panel {
+width: 100%;
+height: 50%;
+position: absolute;
+bottom:0;
+left:0;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: flex-end;
+overflow-y: scroll;
+transform-origin: center center;
+transform: rotate(180deg);
+}
+.sidepanel .panel * {
+writing-mode: vertical-rl;
+text-orientation: mixed;
+margin: 10% 0%;
+font-size: 180%;
+font-family: monospace;
+font-weight: 600;
 }
