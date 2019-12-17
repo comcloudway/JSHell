@@ -11,14 +11,14 @@
 <body>
     <div class="sidepanel">
        <div class="menu">
-           <i class="material-icons">save</i>
-           <i class="material-icons">create_new_folder</i>
-           <i class="material-icons">folder</i>
-           <i class="material-icons">bug_report</i>
+           <i class="material-icons" id="btn_save">save</i>
+           <i class="material-icons" id="btn_new">create_new_folder</i>
+           <i class="material-icons" id="btn_open">folder</i>
+           <i class="material-icons" id="btn_exec">bug_report</i>
        </div>
        <div class="panel">
-           <p>Char Count:</p>
-           <p>Time: 00:00</p>
+           <p id="widget_chars">Char Count:</p>
+           <p id="widget_time">Time: 00:00</p>
        </div>
     </div>
     <div class="editor">
@@ -29,10 +29,14 @@
 
     <div class="toolbox">
         <div class="content">
+            <div class="debug" id="debug_tab">
+            </div>
+            <div class="console" id="console_tab">
+            </div>
         </div>
         <div class="toolbar">
-            <i class="material-icons">bug_report</i>
-            <i class="material-icons">developer_board</i>
+            <i class="material-icons" id="btn_debug_tab">bug_report</i>
+            <i class="material-icons" id="btn_console_tab">developer_board</i>
         </div>
     </div>
   
