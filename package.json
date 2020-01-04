@@ -3,7 +3,7 @@
   "id": "jshell",
   "version": [0, 1, 1],
   "desc": "JavaScript IDE",
-  "src": "https://raw.githubusercontent.com/comcloudway/JSHell/master/jshell.js",
+  "src": "https://comcloudway.github.io/JSHell/jshell.js",
   "deps": [
 
   ]
