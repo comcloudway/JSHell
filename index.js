@@ -2,25 +2,25 @@
 
 const sidepanel = {
     menu : {
-        save : documemt.getElementById("btn_save"),
-        create : documemt.getElementById("btn_new"),
-        open : documemt.getElementById("btn_open"),
-        exec : documemt.getElementById("btn_exec")
+        save : document.getElementById("btn_save"),
+        create : document.getElementById("btn_new"),
+        open : document.getElementById("btn_open"),
+        exec : document.getElementById("btn_exec")
     },
     panel : {
-        time : documemt.getElementById("widget_time"),
-        chars : documemt.getElementById("widget_chars")
+        time : document.getElementById("widget_time"),
+        chars : document.getElementById("widget_chars")
     }
 }
 
 const toolbox = {
     tab : {
-        debug : documemt.getElementById("debug_tab"),
-        console : documemt.getElementById("console_tab")
+        debug : document.getElementById("debug_tab"),
+        console : document.getElementById("console_tab")
     },
     btn : {
-        debug : documemt.getElementById("btn_debug_tab"),
-        console : documemt.getElementById("btn_console_tab")
+        debug : document.getElementById("btn_debug_tab"),
+        console : document.getElementById("btn_console_tab")
     }
 }
 
